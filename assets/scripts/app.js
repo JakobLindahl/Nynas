@@ -49,7 +49,7 @@ TrainTbody.prototype.constructor = TrainTbody;
 
 
 const KEY = '14e392b947d7270060ce0c117b7c838b';
-const API_URL = 'http://api.openweathermap.org/data/2.5/forecast?q=nynashamn&APPID=' + KEY;
+const API_URL = 'https://api.openweathermap.org/data/2.5/forecast?q=nynashamn&APPID=' + KEY;
 
 function HttpGet(url) {
     this.url = url;
