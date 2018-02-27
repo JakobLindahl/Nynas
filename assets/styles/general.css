@@ -1,0 +1,19 @@
+
+.header_background{
+	 background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url(../images/layout/header-sky.jpg);
+}
+
+
+.form_toggle input[type="radio"][value="yes"]:checked ~ .hide_me {
+	visibility: visible;
+}
+
+.form_toggle input[type="radio"][value="no"]:checked ~ .hide_me {
+	visibility: hidden;
+}
+
+.content {
+	box-shadow: 0 0 2px 2px lightblue;
+}

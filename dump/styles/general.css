@@ -1,0 +1,186 @@
+@import url(reset.css);
+
+@media ONLY screen AND (max-width: 650px) {
+
+	body .section_content {
+		max-width: 700px;
+	}
+
+	body .aside_content {
+		min-width: 102%;
+	}
+
+	body section {
+		margin: 5% 3% 90px 4%;
+	}
+
+	body aside {
+		margin: 5% 5% 5% 2%;
+	}
+
+}
+
+@media ONLY screen AND (min-width: 650px) {
+
+	body .section_content {
+		min-width: 371px;
+		max-width: 700px;
+	}
+
+	body .aside_content {
+		max-width: 200px;
+	}
+
+	body > div {
+		display: flex;
+	}
+
+	body section {
+		order: 1;
+		flex: 2;
+		margin: 2% 3% 90px 2%;
+	}
+
+	body aside {
+		order: 2;
+		flex: 1;
+		margin: 2% 2% 5% 2%;
+	}
+
+}
+
+h1 {
+	font-weight: bolder;
+}
+
+h2 {
+	font-weight: bolder;
+	margin: 2%;
+	color: #6A9A1F;
+}
+
+h3 {
+	font-weight: bolder;
+	margin: 2%;
+	color: #6A9A1F;
+}
+
+body {
+	background-color: #e8eaed;
+	font-family: "verdana", "arial", "sans-serif";
+	min-width: 320px;
+}
+
+body > header {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../assets/images/layout/header-sky.jpg);
+	color: #242291;
+	padding: 30px;
+}
+
+body > header > h1 {
+	margin-bottom: 1%;
+}
+
+nav {
+	background-color: #404040;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav > ul > li {
+	display: inline;
+}
+
+nav > ul > li > a {
+	display: inline-block;
+	padding: 10px;
+	color: #F6F6E8;
+	font-size: 1.1em;
+	text-decoration: none;
+}
+
+nav > ul > li > #back {
+	float: right;
+}
+
+nav > ul > li > a:hover {
+	background-color: #00ACE9;
+}
+
+
+body .container {
+	background-color: #e8eaed;
+}
+
+body .section_content {
+	border-top-style: solid;
+	border-top-width: 4px;
+	border-color: #00ACE9;
+	border-radius: 10px 10px 0px 0px;
+	padding: 2% 2% 5% 2%;
+	background-color: #fff;
+	display: inline-block;
+	box-shadow: 0 0 2px 2px lightblue;
+}
+
+body .aside_content {
+	display: inline-block;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #fff;
+	padding: 1% 1% 4% 1%;
+	box-shadow: 0 0 2px 2px lightblue;
+}
+
+body .section_content form div{
+	margin: 5% 5% 5% 0;
+}
+
+
+body .section_content form > button{
+	margin-bottom: 2%;
+}
+
+.text_area label, .text_area textarea{
+	display: block;
+}
+
+.text_area small{
+	font-size: 0.7em;
+	color: rgba(0 , 0 , 0 , 0.5);
+}
+
+.form_toggle input[type="radio"][value="yes"]:checked ~ .hide_me {
+	visibility: visible;
+}
+
+.form_toggle input[type="radio"][value="no"]:checked ~ .hide_me {
+	visibility: hidden;
+}
+
+
+body section figure {
+	margin: 1%;
+	float: left;
+}
+
+body section figcaption {
+	font-size: 90%;
+}
+
+footer {
+	border-top-style: solid;
+	border-top-width: 2px;
+	border-color: #ccc;
+	background-color: #fff;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	height: 30px;
+	width: 100%;
+	padding: 10px;
+}

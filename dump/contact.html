@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/general.css">
+	<title>Nynas</title>
+</head>
+
+<body>
+	<header>
+		<h1>Nickstabadet</h1>
+		<p>Ett soligt sommarbad</p>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Hem</a></li>
+			<li><a href="contact.html">Kontakt</a></li>
+			<li><a href="status.html">Väder</a></li>
+			<li><a href="index.html" id="back">Tillbaks</a></li>
+		</ul>
+	</nav>
+	<section>
+		<div class="section_content">
+			<h2>Lämna dina synpunkter här!</h2>
+			<form action="#">
+				<div>
+					<label for="rubrik">Rubrik</label>
+					<input id="rubrik" type="text" placeholder="Rubrik">
+				</div>
+
+				<p class="text_area">
+					<label for="beskrivning">Beskrivning</label>
+					<textarea id="beskrivning" cols="30" rows="2"></textarea>
+					<small>Max 100 tecken.</small>
+				</p>
+
+				<div>
+					<label for="ärende">Ärende</label>
+					<select id="ärende">
+					<option selected>Strand</option>
+				</select>
+				</div>
+
+				<div>
+					<label>Vill du få svar på din synpunkt?</label>
+					<div class="form_toggle">
+						<input value="yes" name="svar" id="svar_ja" type="radio">
+						<label for="svar_ja">yes</label>
+						<input value="no" name="svar" id="svar_nej" type="radio" checked>
+						<label for="svar_nej">no</label>
+						<div class="hide_me">
+							<label for="email">Email</label>
+							<input id="email" type="email" placeholder="example@email.com">
+						</div>
+					</div>
+				</div>
+				<button type="submit">Skicka..</button>
+			</form>
+		</div>
+	</section>
+	<footer>
+		vill du veta mer? skicka e-post till
+		<a href="mailto:jakob.lindahl@yh.nackademin.se">jakob.lindahl@yh.nackademin.se</a>
+	</footer>
+</body>
+
+</html>
